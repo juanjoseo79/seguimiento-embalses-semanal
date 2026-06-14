@@ -197,7 +197,7 @@ EORD.forEach((e,i)=>{
   const vS=fvW(fin-ini),v4=r28?fvW(fin-r28.fin):{t:'—',c:''};
   rows+='<tr>'+tdL(WP[0],bg,ENAME[e])+tdN(WP[1],bg,ini.toFixed(2))+tdN(WP[2],bg,fin.toFixed(2))+tdN(WP[3],bg,vS.t,vS.c)+tdN(WP[4],bg,v4.t,v4.c)+tdN(WP[5],bg,(fin-CMIN_E[e]).toFixed(2)+' m')+tdN(WP[6],bg,pct.toFixed(1)+'%')+tdDot(WP[7],bg,ST_C[sc])+tdSt(WP[8],bg,ST_C[sc],STT[sc])+'<\/tr>';
 });
-const nota='vol. útil = (vol. actual – vol. en cota mínima) / (vol. en cota máxima – vol. en cota mínima), interpolado de curva cota-volumen aprobada. Estado: ● Bajo < 30% · ● Normal 30–60% · ● Alto > 60%. Fuente: base de datos técnica UT.';
+const nota='vol. útil = (vol. actual – vol. en cota mínima) / (vol. en cota máxima – vol. en cota mínima), interpolado de curva cota-volumen aprobada. Estado: ● Bajo < 40% · ● Normal 40–80% · ● Alto > 80%. Fuente: base de datos técnica UT.';
 const footerRow='<tr><td colspan="'+NC+'" style="padding:3pt 6pt;border:1pt solid #bfc9d4;font-family:Arial,sans-serif;font-size:7.5pt;font-style:italic;color:#444;background:#fafbfc">'+nota+'<\/td><\/tr>';
 const html='<table style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:9pt;width:'+tot+'pt;table-layout:fixed" width="'+tot+'">'
   +'<colgroup>'+WP.map(w=>'<col width="'+w+'">').join('')+'<\/colgroup>'
